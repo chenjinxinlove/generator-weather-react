@@ -1,4 +1,4 @@
-# generator-weather-react [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-weather-react 
 > react spa yeoman
 
 ## Installation
@@ -14,6 +14,14 @@ Then generate your new project:
 
 ```bash
 yo weather-react
+
+npm install 安装
+npm run clean   清理dist目录
+npm run dist    发布
+npm start   开发
+npm run zip     打包dist目录
+npm run ftp-ww 发布到外网测试
+npm ftp-wx  发布到微信测试
 ```
 
 ## Getting To Know Yeoman

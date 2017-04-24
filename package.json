@@ -49,6 +49,6 @@
       "node": true
     }
   },
-  "repository": "chenjinxinlove/generator-weather-react",
+  "repository": "https://github.com/chenjinxinlove/generator-weather-react.git",
   "license": "MIT"
 }
