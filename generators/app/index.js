@@ -63,9 +63,9 @@ module.exports = class extends Generator {
         'babel-preset-react': '^6.0.15',
         'babel-preset-stage-0': '^6.5.0',
         'bower-webpack-plugin': '^0.1.9',
-        copyfiles: '^1.0.0',
+        'copyfiles': '^1.0.0',
         'css-loader': '^0.23.0',
-        eslint: '^3.7.1',
+        'eslint': '^3.7.1',
         'eslint-config-standard': '^6.2.1',
         'eslint-friendly-formatter': '^2.0.5',
         'eslint-loader': '^1.5.0',
@@ -73,20 +73,20 @@ module.exports = class extends Generator {
         'eslint-plugin-promise': '^2.0.1',
         'eslint-plugin-react': '^6.0.0',
         'eslint-plugin-standard': '^2.0.1',
-        fastclick: '^1.0.6',
+        'fastclick': '^1.0.6',
         'file-loader': '^0.9.0',
-        glob: '^7.0.0',
-        gulp: '^3.9.1',
+        'glob': '^7.0.0',
+        'gulp': '^3.9.1',
         'gulp-ftp': '^1.1.0',
         'gulp-open': '1.0.0',
         'gulp-sftp': '^0.1.5',
         'gulp-zip': '^4.0.0',
         'isomorphic-fetch': '^2.2.1',
         'isparta-instrumenter-loader': '^1.0.0',
-        minimist: '^1.2.0',
+        'minimist': '^1.2.0',
         'node-sass': '^4.5.0',
         'null-loader': '^0.1.1',
-        open: '0.0.5',
+        'open': '0.0.5',
         'phantomjs-prebuilt': '^2.0.0',
         'postcss-loader': '^1.3.1',
         'react-addons-test-utils': '^15.0.0',
@@ -94,11 +94,11 @@ module.exports = class extends Generator {
         'redux-devtools-extension': '^2.13.0',
         'redux-logger': '^2.8.2',
         'redux-thunk': '^2.2.0',
-        rimraf: '^2.4.3',
+        'rimraf': '^2.4.3',
         'sass-loader': '^6.0.1',
         'style-loader': '^0.13.0',
         'url-loader': '^0.5.6',
-        webpack: '^1.12.0',
+        'webpack': '^1.12.0',
         'webpack-dev-server': '^1.12.0'
       },
       dependencies: {
@@ -106,15 +106,15 @@ module.exports = class extends Generator {
         'core-js': '^2.0.0',
         'gulp-sequence': '^0.4.6',
         'gulp-util': '^3.0.8',
-        md5: '^2.2.1',
+        'md5': '^2.2.1',
         'normalize.css': '^4.2.0',
-        os: '^0.1.1',
-        react: '^15.0.0',
+        'os': '^0.1.1',
+        'react': '^15.0.0',
         'react-dom': '^15.0.0',
         'react-redux': '^5.0.3',
         'react-router': '^3.0.2',
         'react-router-redux': '^4.0.8',
-        redux: '^3.6.0'
+        'redux': '^3.6.0'
       }
     });
     pkg.keywords = pkg.keywords || [];
@@ -212,6 +212,10 @@ module.exports = class extends Generator {
     this.fs.copy(
       this.templatePath('./src/config/fetch_tmpl.js'),
       './src/config/fetch.js'
+    );
+	this.fs.copy(
+      this.templatePath('./src/config/env_tmpl.js'),
+      './src/config/env.js'
     );
     this.fs.copy(
       this.templatePath('./src/config/rem_tmpl.js'),

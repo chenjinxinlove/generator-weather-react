@@ -30,6 +30,7 @@ describe('generator-weather-react:app', () => {
       'src/components/header/header.scss',
       'src/config/fetch.js',
       'src/config/rem.js',
+	  'src/config/env.js',
       'src/pages/app.js',
       'src/pages/home/home.js',
       'src/pages/home/home.scss',
